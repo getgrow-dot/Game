@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Dragon Tiger Game</h1>
+
+        <!-- Bet Selection -->
+        <div class="bet-section">
+            <label for="bet-amount">Select Bet (10 PKR to 5000 PKR):</label>
+            <input type="range" id="bet-amount" min="10" max="5000" step="10" value="10">
+            <span id="bet-display">10 PKR</span>
+        </div>
+
+        <!-- Slot Machine Section -->
+        <div class="slot-machine">
+            <div class="slot" id="slot1">
+                <div class="symbol">🍒</div>
+                <div class="symbol">🍋</div>
+                <div class="symbol">🍊</div>
+                <div class="symbol">🍇</div>
+                <div class="symbol">7️⃣</div>
+            </div>
+            <div class="slot" id="slot2">
+                <div class="symbol">🍒</div>
+                <div class="symbol">🍋</div>
+                <div class="symbol">🍊</div>
+                <div class="symbol">🍇</div>
+                <div class="symbol">7️⃣</div>
+            </div>
+            <div class="slot" id="slot3">
+                <div class="symbol">🍒</div>
+                <div class="symbol">🍋</div>
+                <div class="symbol">🍊</div>
+                <div class="symbol">🍇</div>
+                <div class="symbol">7️⃣</div>
+            </div>
+            <button onclick="spinSlots()">Spin</button>
+        </div>
+
+        <!-- Deposit Button -->
+        <div class="deposit-section">
+            <button onclick="showDepositInfo()">Deposit</button>
+            <div id="deposit-info" style="display:none;">
+                <p>JazzCash Account Number: 03274098835</p>
+                <p>Account Title: Saleem Raza</p>
+            </div>
+            
+            <!-- Upload Payment Screenshot Section -->
+            <div class="upload-section" style="display:none;">
+                <label for="payment-screenshot">Upload Payment Screenshot:</label>
+                <input type="file" id="payment-screenshot" accept="image/*" onchange="previewScreenshot(event)">
+                <div id="screenshot-preview" style="margin-top: 10px;">
+                    <!-- Preview will appear here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Withdraw Button -->
+        <div class="withdraw-section">
+            <button onclick="showWithdrawForm()">Withdraw</button>
+            <div id="withdraw-form" style="display:none;">
+                <h3>Withdraw Funds</h3>
+                <label for="account-number">Account Number:</label>
+                <input type="text" id="account-number" placeholder="Enter your account number" />
+                <label for="account-title">Account Title:</label>
+                <input type="text" id="account-title" placeholder="Enter your account title" />
+                <button onclick="submitWithdraw()">Submit</button>
+                <button onclick="cancelWithdraw()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
