@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #333;
+}
+
+.bet-section {
+    margin-bottom: 20px;
+}
+
+.bet-section input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.bet-section span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.slot-machine {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.slot {
+    width: 60px;
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+.symbol {
+    font-size: 40px;
+    text-align: center;
+    line-height: 60px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#withdraw-form {
+    margin-top: 20px;
+}
+
+#withdraw-form input {
+    padding: 8px;
+    margin: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#withdraw-form button {
+    background-color: #FF5733; /* Red for withdraw */
+}
+
+#withdraw-form button:hover {
+    background-color: #e04a1e;
+}
+
+/* Deposit info section */
+.deposit-section, .withdraw-section {
+    margin-top: 20px;
+}
+
+#deposit-info {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+}
